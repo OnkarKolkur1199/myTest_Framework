@@ -14,13 +14,13 @@ public class TestCase1 extends BaseTest {
 	HomePageEvents homePage = new HomePageEvents();
 	LoginPageEvents loginPage = new LoginPageEvents();
 	
-	@Test
-	public void sampleMethodForEnteringCreds() {
+	@Test (dataProvider = "loginTestData", dataProviderClass = BaseTest.class)
+	public void sampleMethodForEnteringCreds(String myMail, String myPassword) {
 		Reporter.log("Signin into LoginPage<br>");
 		homePage.startHereButton();
 		Reporter.log("Verifying Login Button is present<br>");
 		loginPage.verifyLoginPageLogged();
 		Reporter.log("Enter the creds");
-		loginPage.enterCreds();
+		loginPage.enterCreds(myMail, myPassword);
 	}
 }

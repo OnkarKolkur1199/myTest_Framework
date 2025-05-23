@@ -18,18 +18,4 @@
       </class> <!-- qa.tests.TestCase1 -->
     </classes>
   </test> <!-- LoginTestAutomation1(failed) -->
-  <test thread-count="5" name="LoginTestAutomation2(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="qa.tests.TestCase2">
-        <methods>
-          <include name="beforeTestMethod"/>
-          <include name="beforeMethodMethod"/>
-          <include name="afterTestMethod"/>
-          <include name="verifyFirstPage"/>
-          <include name="afterMethodMethod"/>
-        </methods>
-      </class> <!-- qa.tests.TestCase2 -->
-    </classes>
-  </test> <!-- LoginTestAutomation2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
