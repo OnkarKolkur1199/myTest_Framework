@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.SuiteListener"/>
+  </listeners>
+  <test thread-count="5" name="LoginTestAutomation1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="qa.tests.TestCase1">
+        <methods>
+          <include name="beforeTestMethod"/>
+          <include name="beforeMethodMethod"/>
+          <include name="afterTestMethod"/>
+          <include name="sampleMethodForEnteringCreds"/>
+          <include name="afterMethodMethod"/>
+        </methods>
+      </class> <!-- qa.tests.TestCase1 -->
+    </classes>
+  </test> <!-- LoginTestAutomation1(failed) -->
+  <test thread-count="5" name="LoginTestAutomation2(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="qa.tests.TestCase2">
+        <methods>
+          <include name="beforeTestMethod"/>
+          <include name="beforeMethodMethod"/>
+          <include name="afterTestMethod"/>
+          <include name="verifyFirstPage"/>
+          <include name="afterMethodMethod"/>
+        </methods>
+      </class> <!-- qa.tests.TestCase2 -->
+    </classes>
+  </test> <!-- LoginTestAutomation2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
