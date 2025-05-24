@@ -1,26 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Signin into LoginPage<br>]]>
+      <![CDATA[Step 1 - Signing into LoginPage<br>]]>
     </line>
     <line>
-      <![CDATA[Verifying Login Button is present<br>]]>
+      <![CDATA[Step 2 - Verifying Login Button is present<br>]]>
     </line>
     <line>
-      <![CDATA[Enter the creds]]>
+      <![CDATA[Step 3 - Enter the creds<br>]]>
+    </line>
+    <line>
+      <![CDATA[ Passed-  <a href='C:\Users\Onkar Kolkur\eclipse-workspace\Auto_Framework\.\screenshotsPass\24052025170349\LoginTestAutomation1_sampleMethodForEnteringCreds.png'> <img src='C:\Users\Onkar Kolkur\eclipse-workspace\Auto_Framework\.\screenshotsPass\24052025170349\LoginTestAutomation1_sampleMethodForEnteringCreds.png' height='150' width='300'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[Step 1 - Signing into LoginPage<br>]]>
+    </line>
+    <line>
+      <![CDATA[Step 2 - Verifying Login Button is present<br>]]>
+    </line>
+    <line>
+      <![CDATA[Step 3 - Enter the creds<br>]]>
+    </line>
+    <line>
+      <![CDATA[ Passed-  <a href='C:\Users\Onkar Kolkur\eclipse-workspace\Auto_Framework\.\screenshotsPass\24052025170349\LoginTestAutomation1_sampleMethodForEnteringCreds.png'> <img src='C:\Users\Onkar Kolkur\eclipse-workspace\Auto_Framework\.\screenshotsPass\24052025170349\LoginTestAutomation1_sampleMethodForEnteringCreds.png' height='150' width='300'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[Step 1 - Signin into LoginPage<br>]]>
+    </line>
+    <line>
+      <![CDATA[Step 2 - Verifying Login Button is present<br>]]>
+    </line>
+    <line>
+      <![CDATA[ Passed-  <a href='C:\Users\Onkar Kolkur\eclipse-workspace\Auto_Framework\.\screenshotsPass\24052025170349\LoginTestAutomation2_verifyFirstPage.png'> <img src='C:\Users\Onkar Kolkur\eclipse-workspace\Auto_Framework\.\screenshotsPass\24052025170349\LoginTestAutomation2_verifyFirstPage.png' height='150' width='300'/> </a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-05-23T22:58:26 IST" name="Suite" finished-at="2025-05-23T22:58:55 IST" duration-ms="29389">
+  <suite started-at="2025-05-24T17:03:32 IST" name="Suite" finished-at="2025-05-24T17:04:18 IST" duration-ms="46099">
     <groups>
     </groups>
-    <test started-at="2025-05-23T22:58:26 IST" name="LoginTestAutomation1" finished-at="2025-05-23T22:58:55 IST" duration-ms="29389">
+    <test started-at="2025-05-24T17:03:32 IST" name="LoginTestAutomation1" finished-at="2025-05-24T17:04:04 IST" duration-ms="32025">
       <class name="qa.tests.TestCase1">
-        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.tests.TestCase1@37883b97]" started-at="2025-05-23T22:58:26 IST" name="beforeTestMethod" finished-at="2025-05-23T22:58:26 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.tests.TestCase1@6f45df59]" started-at="2025-05-24T17:03:32 IST" name="beforeTestMethod" finished-at="2025-05-24T17:03:32 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@37883b97]" started-at="2025-05-23T22:58:26 IST" name="beforeMethodMethod" finished-at="2025-05-23T22:58:50 IST" duration-ms="23567" status="PASS">
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@6f45df59]" started-at="2025-05-24T17:03:33 IST" name="beforeMethodMethod" finished-at="2025-05-24T17:03:44 IST" duration-ms="11378" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,7 +60,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method signature="sampleMethodForEnteringCreds(java.lang.String,java.lang.String)[pri:0, instance:qa.tests.TestCase1@37883b97]" started-at="2025-05-23T22:58:50 IST" name="sampleMethodForEnteringCreds" data-provider="loginTestData" finished-at="2025-05-23T22:58:55 IST" duration-ms="4647" status="PASS">
+        <test-method signature="sampleMethodForEnteringCreds(java.lang.String,java.lang.String)[pri:0, instance:qa.tests.TestCase1@6f45df59]" started-at="2025-05-24T17:03:44 IST" name="sampleMethodForEnteringCreds" data-provider="loginTestData" finished-at="2025-05-24T17:03:49 IST" duration-ms="5281" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,25 +75,121 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Signin into LoginPage<br>]]>
+              <![CDATA[Step 1 - Signing into LoginPage<br>]]>
             </line>
             <line>
-              <![CDATA[Verifying Login Button is present<br>]]>
+              <![CDATA[Step 2 - Verifying Login Button is present<br>]]>
             </line>
             <line>
-              <![CDATA[Enter the creds]]>
+              <![CDATA[Step 3 - Enter the creds<br>]]>
+            </line>
+            <line>
+              <![CDATA[ Passed-  <a href='C:\Users\Onkar Kolkur\eclipse-workspace\Auto_Framework\.\screenshotsPass\24052025170349\LoginTestAutomation1_sampleMethodForEnteringCreds.png'> <img src='C:\Users\Onkar Kolkur\eclipse-workspace\Auto_Framework\.\screenshotsPass\24052025170349\LoginTestAutomation1_sampleMethodForEnteringCreds.png' height='150' width='300'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- sampleMethodForEnteringCreds -->
-        <test-method is-config="true" signature="afterMethodMethod()[pri:0, instance:qa.tests.TestCase1@37883b97]" started-at="2025-05-23T22:58:55 IST" name="afterMethodMethod" finished-at="2025-05-23T22:58:55 IST" duration-ms="397" status="PASS">
+        <test-method is-config="true" signature="afterMethodMethod()[pri:0, instance:qa.tests.TestCase1@6f45df59]" started-at="2025-05-24T17:03:50 IST" name="afterMethodMethod" finished-at="2025-05-24T17:03:50 IST" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:qa.tests.TestCase1@37883b97]" started-at="2025-05-23T22:58:55 IST" name="afterTestMethod" finished-at="2025-05-23T22:58:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase1@6f45df59]" started-at="2025-05-24T17:03:50 IST" name="beforeMethodMethod" finished-at="2025-05-24T17:03:59 IST" duration-ms="9030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void qa.tests.TestCase1.sampleMethodForEnteringCreds(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodMethod -->
+        <test-method signature="sampleMethodForEnteringCreds(java.lang.String,java.lang.String)[pri:0, instance:qa.tests.TestCase1@6f45df59]" started-at="2025-05-24T17:03:59 IST" name="sampleMethodForEnteringCreds" data-provider="loginTestData" finished-at="2025-05-24T17:04:04 IST" duration-ms="4691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[poojakolkur11@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Step 1 - Signing into LoginPage<br>]]>
+            </line>
+            <line>
+              <![CDATA[Step 2 - Verifying Login Button is present<br>]]>
+            </line>
+            <line>
+              <![CDATA[Step 3 - Enter the creds<br>]]>
+            </line>
+            <line>
+              <![CDATA[ Passed-  <a href='C:\Users\Onkar Kolkur\eclipse-workspace\Auto_Framework\.\screenshotsPass\24052025170349\LoginTestAutomation1_sampleMethodForEnteringCreds.png'> <img src='C:\Users\Onkar Kolkur\eclipse-workspace\Auto_Framework\.\screenshotsPass\24052025170349\LoginTestAutomation1_sampleMethodForEnteringCreds.png' height='150' width='300'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sampleMethodForEnteringCreds -->
+        <test-method is-config="true" signature="afterMethodMethod()[pri:0, instance:qa.tests.TestCase1@6f45df59]" started-at="2025-05-24T17:04:04 IST" name="afterMethodMethod" finished-at="2025-05-24T17:04:04 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodMethod -->
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:qa.tests.TestCase1@6f45df59]" started-at="2025-05-24T17:04:04 IST" name="afterTestMethod" finished-at="2025-05-24T17:04:04 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
       </class> <!-- qa.tests.TestCase1 -->
     </test> <!-- LoginTestAutomation1 -->
+    <test started-at="2025-05-24T17:04:04 IST" name="LoginTestAutomation2" finished-at="2025-05-24T17:04:18 IST" duration-ms="14074">
+      <class name="qa.tests.TestCase2">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:qa.tests.TestCase2@6bf0219d]" started-at="2025-05-24T17:04:04 IST" name="beforeTestMethod" finished-at="2025-05-24T17:04:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.tests.TestCase2@6bf0219d]" started-at="2025-05-24T17:04:04 IST" name="beforeMethodMethod" finished-at="2025-05-24T17:04:06 IST" duration-ms="2099" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void qa.tests.TestCase2.verifyFirstPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodMethod -->
+        <test-method signature="verifyFirstPage()[pri:0, instance:qa.tests.TestCase2@6bf0219d]" started-at="2025-05-24T17:04:06 IST" name="verifyFirstPage" finished-at="2025-05-24T17:04:17 IST" duration-ms="10580" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step 1 - Signin into LoginPage<br>]]>
+            </line>
+            <line>
+              <![CDATA[Step 2 - Verifying Login Button is present<br>]]>
+            </line>
+            <line>
+              <![CDATA[ Passed-  <a href='C:\Users\Onkar Kolkur\eclipse-workspace\Auto_Framework\.\screenshotsPass\24052025170349\LoginTestAutomation2_verifyFirstPage.png'> <img src='C:\Users\Onkar Kolkur\eclipse-workspace\Auto_Framework\.\screenshotsPass\24052025170349\LoginTestAutomation2_verifyFirstPage.png' height='150' width='300'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFirstPage -->
+        <test-method is-config="true" signature="afterMethodMethod()[pri:0, instance:qa.tests.TestCase2@6bf0219d]" started-at="2025-05-24T17:04:17 IST" name="afterMethodMethod" finished-at="2025-05-24T17:04:18 IST" duration-ms="1163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodMethod -->
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:qa.tests.TestCase2@6bf0219d]" started-at="2025-05-24T17:04:18 IST" name="afterTestMethod" finished-at="2025-05-24T17:04:18 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+      </class> <!-- qa.tests.TestCase2 -->
+    </test> <!-- LoginTestAutomation2 -->
   </suite> <!-- Suite -->
 </testng-results>

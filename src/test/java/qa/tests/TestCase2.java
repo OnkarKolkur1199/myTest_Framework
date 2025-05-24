@@ -16,9 +16,9 @@ public class TestCase2 extends BaseTest {
 	
 	@Test
 	public void verifyFirstPage() {
-		Reporter.log("Signin into LoginPage<br>");
+		Reporter.log("Step 1 - Signin into LoginPage<br>");
 		homePage.startHereButton();
-		Reporter.log("Verifying Login Button is present<br>");
+		Reporter.log("Step 2 - Verifying Login Button is present<br>");
 		loginPage.verifyLoginPageLogged();
 	}
 

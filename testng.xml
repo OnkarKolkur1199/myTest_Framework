@@ -10,12 +10,10 @@
       <class name="qa.tests.TestCase1"/>
     </classes>
   </test>
-  <!-- 
   <test name="LoginTestAutomation2">
   <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="qa.tests.TestCase2"/>
     </classes>
   </test>
-  -->
 </suite> 

@@ -12,7 +12,7 @@
           <include name="beforeTestMethod"/>
           <include name="beforeMethodMethod"/>
           <include name="afterTestMethod"/>
-          <include name="sampleMethodForEnteringCreds"/>
+          <include name="sampleMethodForEnteringCreds" invocation-numbers="0"/>
           <include name="afterMethodMethod"/>
         </methods>
       </class> <!-- qa.tests.TestCase1 -->

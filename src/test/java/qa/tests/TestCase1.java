@@ -16,11 +16,11 @@ public class TestCase1 extends BaseTest {
 	
 	@Test (dataProvider = "loginTestData", dataProviderClass = BaseTest.class)
 	public void sampleMethodForEnteringCreds(String myMail, String myPassword) {
-		Reporter.log("Signin into LoginPage<br>");
+		Reporter.log("Step 1 - Signing into LoginPage<br>");
 		homePage.startHereButton();
-		Reporter.log("Verifying Login Button is present<br>");
+		Reporter.log("Step 2 - Verifying Login Button is present<br>");
 		loginPage.verifyLoginPageLogged();
-		Reporter.log("Enter the creds");
+		Reporter.log("Step 3 - Enter the creds<br>");
 		loginPage.enterCreds(myMail, myPassword);
 	}
 }

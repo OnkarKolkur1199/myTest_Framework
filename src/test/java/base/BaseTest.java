@@ -2,6 +2,8 @@ package base;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.time.Duration;
@@ -15,9 +17,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -71,7 +76,7 @@ public class BaseTest {
 		}
 	}
 	
-	public void captureScreenshot(String fileName) {
+	public void captureScreenshotFail(String fileName) {
 		
 		if (screenshotSubFolderName == null) {
 			LocalDateTime myDateObj = LocalDateTime.now();
@@ -81,7 +86,25 @@ public class BaseTest {
 	    
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-		File destFile = new File("./screenshots/"+ screenshotSubFolderName +"/"+ fileName);
+		File destFile = new File("./screenshotsFail/"+ screenshotSubFolderName +"/"+ fileName + ".png");
+		try {
+			FileUtils.copyFile(sourceFile, destFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void captureScreenshotPass(String fileName) {
+		
+		if (screenshotSubFolderName == null) {
+			LocalDateTime myDateObj = LocalDateTime.now();
+		    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("ddMMyyyyHHmmss");
+		    screenshotSubFolderName = myDateObj.format(myFormatObj);
+		}
+	    
+		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
+		File destFile = new File("./screenshotsPass/"+ screenshotSubFolderName +"/"+ fileName + ".png");
 		try {
 			FileUtils.copyFile(sourceFile, destFile);
 		} catch (IOException e) {
@@ -109,6 +132,48 @@ public class BaseTest {
 		workbook.close();
 		fis.close();
 		return data;
+	}
+	
+	public void storeFailScreenshotInReport(String reportFileName) {
+		File img = new File("./screenshotsFail/"+ screenshotSubFolderName +"/"+ reportFileName + ".png");
+		FileOutputStream screenshotStream = null;
+		try {
+			screenshotStream = new FileOutputStream(img);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			screenshotStream.write(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES));
+		} catch (WebDriverException | IOException e) {
+			e.printStackTrace();
+		}
+		try {
+			screenshotStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		Reporter.log(" Defect- " +" <a href='"+img.getAbsolutePath()+"'> <img src='"+ img.getAbsolutePath()+"' height='150' width='280'/> </a>");
+	}
+	
+	public void storePassScreenshotInReport(String reportFileName) {
+		File img = new File("./screenshotsPass/"+ screenshotSubFolderName +"/"+ reportFileName + ".png");
+		FileOutputStream screenshotStream = null;
+		try {
+			screenshotStream = new FileOutputStream(img);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			screenshotStream.write(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES));
+		} catch (WebDriverException | IOException e) {
+			e.printStackTrace();
+		}
+		try {
+			screenshotStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		Reporter.log(" Passed- " +" <a href='"+img.getAbsolutePath()+"'> <img src='"+ img.getAbsolutePath()+"' height='150' width='300'/> </a>");
 	}
 
 }
