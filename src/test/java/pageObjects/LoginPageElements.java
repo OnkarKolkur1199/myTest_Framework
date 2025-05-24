@@ -2,8 +2,8 @@ package pageObjects;
 
 public interface LoginPageElements {
 	
-	String loginText = "//div[text()='Login']";
-	String emailAddress = "//input[@name='email']";
-	String passwordField = "//input[@name='password']";
+	String loginText = "//input[@value='Log in']";
+	String emailAddress = "//input[@id='Email']";
+	String passwordField = "//input[@id='Password']";
 
 }

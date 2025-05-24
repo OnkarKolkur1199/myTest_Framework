@@ -2,6 +2,7 @@ package pageObjects;
 
 public interface HomePageElements {
 	
-	String startHereButtonText = "//span[text()='Start Here']";
+	String loginButtonText = "//a[text()='Log in']";
+	String RegisterButtonText = "//a[text()='Register']";
 
 }

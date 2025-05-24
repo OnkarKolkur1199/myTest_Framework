@@ -2,6 +2,6 @@ package utils;
 
 public interface Constants {
 	
-	String url = "https://freecrm.com/";
+	String url = "https://demowebshop.tricentis.com/";
 
 }

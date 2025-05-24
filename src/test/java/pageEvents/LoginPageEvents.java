@@ -13,10 +13,12 @@ public class LoginPageEvents {
 	}
 	
 	public void enterCreds(String myMail, String myPassword) {
-		//ele.getWebElement("XPATH", LoginPageElements.emailAddress).sendKeys("onkarkolkur1999@gmail.com");
-		//ele.getWebElement("XPATH", LoginPageElements.passwordField).sendKeys("Happy@1199");
 		ele.getWebElement("XPATH", LoginPageElements.emailAddress).sendKeys(myMail);
 		ele.getWebElement("XPATH", LoginPageElements.passwordField).sendKeys(myPassword);
+	}
+	
+	public void clickOnLogin() {
+		ele.getWebElement("XPATH", LoginPageElements.loginText).click();;
 	}
 
 }

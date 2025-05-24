@@ -38,28 +38,28 @@ public class BaseTest {
 	public static WebDriver driver;
 	public static String screenshotSubFolderName;
 	
-	@BeforeTest
-	public void beforeTestMethod() {
-	}
+//	@BeforeTest
+//	public void beforeTestMethod() {
+//	}
 	
-	@BeforeMethod
+	@BeforeTest
 	@Parameters ("browser")
-	public void beforeMethodMethod(String browser, Method testMethod) {
+	public void beforeTestMethod(String browser, Method testMethod) {
 		setupDriver(browser);
 		driver.manage().window().maximize();
 		driver.get(Constants.url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));		
 	}
 	
-	@AfterMethod
-	public void afterMethodMethod() {
+	@AfterTest
+	public void afterTestMethod() {
 		driver.quit();
 	}
 	
-	@AfterTest
-	public void afterTestMethod() {
-		
-	}
+//	@AfterTest
+//	public void afterTestMethod() {
+//		
+//	}
 	
 	public void setupDriver(String browser) {
 		if(browser.equalsIgnoreCase("chrome")) {
@@ -112,8 +112,8 @@ public class BaseTest {
 		}
 	}
 	
-	@DataProvider (name = "loginTestData")
-	public String[][] getData() throws Exception {
+	@DataProvider (name = "RegisterationTestData")
+	public Object[][] getRegistrationData() throws Exception {
 		File excelFile = new File("./src/test/resources/Testbook.xlsx");
 		FileInputStream fis = new FileInputStream(excelFile);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);

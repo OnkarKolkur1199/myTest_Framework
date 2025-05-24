@@ -9,15 +9,10 @@
     <classes>
          <class name="qa.tests.TestCase1">
             <methods>
-               <include name="sampleMethodForEnteringCreds" />
+               <include name="FillRegistrationData" />
+               <include name="SubmitAndVerfiyAccount" />
             </methods>
          </class>
      </classes>
-  </test>
-  <test name="LoginTestAutomation2">
-  <parameter name="browser" value="edge"></parameter>
-    <classes>
-      <class name="qa.tests.TestCase2"/>
-    </classes>
   </test>
 </suite> 
