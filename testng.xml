@@ -7,8 +7,12 @@
   <test name="LoginTestAutomation1">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="qa.tests.TestCase1"/>
-    </classes>
+         <class name="qa.tests.TestCase1">
+            <methods>
+               <include name="sampleMethodForEnteringCreds" />
+            </methods>
+         </class>
+     </classes>
   </test>
   <test name="LoginTestAutomation2">
   <parameter name="browser" value="edge"></parameter>
